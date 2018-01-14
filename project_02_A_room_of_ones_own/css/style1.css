@@ -1,0 +1,31 @@
+.nav_bar {
+  font-family: 'Joti One', cursive;
+  background-color: blue;
+}
+
+.nav_bar ul {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_bar li{
+  padding: 0 50px;
+  flex-direction: row;
+  background-color: green;
+  border: 1px solid red;
+}
+
+.nav_bar a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url('images/fractal.jpg');
+}
+
+
+p {
+  font-family: 'Joti One', cursive;
+  color: #006400;
+}
