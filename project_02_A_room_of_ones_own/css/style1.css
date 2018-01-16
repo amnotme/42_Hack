@@ -1,6 +1,6 @@
 .nav_bar {
   font-family: 'Joti One', cursive;
-  background-color: blue;
+  background-color: rgba(0,128,128, 0.5);
 }
 
 .nav_bar ul {
@@ -12,20 +12,70 @@
 .nav_bar li{
   padding: 0 50px;
   flex-direction: row;
-  background-color: green;
-  border: 1px solid red;
+  background-color: transparent;
+  border-right: 1px solid rgba(128,128,0,0.5);
+  border-left: 1px solid rgba(128,128,0,0.5);
+}
+
+.nav_bar li:hover {
+  transition: background-color color 2s  ease;
+  background-color: rgba(128, 128, 0, 0.5);
+
 }
 
 .nav_bar a {
   text-decoration: none;
 }
 
-body {
-  background-image: url('images/fractal.jpg');
+.nav_bar a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: rgb(110, 165, 182);
 }
 
+body {
+  background: url('../images/fractal.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Joti One', cursive;
+}
 
 p {
-  font-family: 'Joti One', cursive;
   color: #006400;
 }
+.icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid transparent;
+  padding: 7px;
+  border-image: url("../images/border.png") 50 round;
+  -webkit-border-image: url("../images/border.png") 50 round;
+  -o-border-image: url("../images/border.png") 50 round;
+}
+
+.icons li {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px 50px;
+  flex-direction: row;
+  background-color: transparent;
+  color: rgb(110, 165, 182);
+}
+.icons a {
+  display: inline-block;
+ width: 24px;
+ height: 24px;
+ margin: 10px;
+ vertical-align: middle;
+ -o-transition: all .3s;
+ -moz-transition: all .3s;
+ -webkit-transition: all .3s;
+ -ms-transition: all .3s;
+}
+.icons a.github { background: url('../images/social-icons/github.png') left top no-repeat; }
+.icons a.linkedin { background: url('../images/social-icons/linkedin.png') left top no-repeat; }
+.icons a:hover { background-position: left -34px; }
