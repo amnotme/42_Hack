@@ -46,6 +46,43 @@ body {
 p {
   color: #006400;
 }
+
+main {
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: repeat(2, 450px);
+  grid-auto-rows: 600px;
+  height: auto;
+  border: 1px solid green;
+  grid-gap: 5px;
+  justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-flow: row dense;
+}
+
+.container {
+  min-width: 500px
+  margin: auto;
+}
+
+.box {
+  width: 450px;
+  height: auto;
+  border: 1px solid red;
+  /*border-image: url("../images/border.png") 50 round;
+  -webkit-border-image: url("../images/border.png") 50 round;
+  -o-border-image: url("../images/border.png") 50 round;*/
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
 .icons ul {
   display: flex;
   justify-content: center;
@@ -60,13 +97,15 @@ p {
 .icons li {
   font-size: 20px;
   font-weight: 900;
+  font-family: monospace;
   padding: 5px 50px;
   flex-direction: row;
   background-color: transparent;
   color: rgb(110, 165, 182);
 }
+
 .icons a {
-  display: inline-block;
+ display: inline-block;
  width: 24px;
  height: 24px;
  margin: 10px;
