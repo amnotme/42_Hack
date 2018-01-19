@@ -18,8 +18,9 @@
 }
 
 .nav_bar li:hover {
-  transition: background-color color 2s  ease;
-  background-color: rgba(128, 128, 0, 0.5);
+  transition: background-color 2s  ease;
+  -webkit-transition: background-color 2s  ease;
+  background-color: rgba(255, 0, 25, 0.8);
 
 }
 
@@ -29,7 +30,7 @@
 
 .nav_bar a, a:hover, a:visited, a:active {
   text-decoration: none;
-  color: rgb(110, 165, 182);
+  color: #EAE0C8;
 }
 
 body {
@@ -43,19 +44,14 @@ body {
   font-family: 'Joti One', cursive;
 }
 
-p {
-  color: #006400;
-}
-
 main {
   display: grid;
   margin-top: 50px;
   margin-bottom: 50px;
-  grid-template-columns: 450px 450px;
+  grid-template-columns: 350px 350px;
   grid-template-rows: repeat(2, 450px);
   grid-auto-rows: 600px;
   height: auto;
-  border: 1px solid green;
   grid-gap: 35px;
   justify-content: center;
   justify-items: center;
@@ -70,19 +66,15 @@ main {
 }
 
 .box {
-  width: 450px;
+  width: 350px;
   height: auto;
-  /*border: 1px solid red;*/
 }
-
-
 
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .box li{
     font-size: 18px;
@@ -93,13 +85,13 @@ main {
     width: auto;
     margin: 5px 0;
     background-color: rgba(255, 0, 25, 0.8);
-    color: black;
+    color: #EAE0C8;
     overflow: hidden;
 }
 
 .box a {
   text-decoration: none;
-  color: black;
+  color: #EAE0C8;
 }
 
 .box li:hover {
@@ -145,8 +137,8 @@ main {
   opacity: .95;
 }
 
-#three{
-  background: url('../images/crypto.jpg') no-repeat center;
+#three {
+  background: url('../images/graphics.jpg') no-repeat center;
   background-size: cover;
   opacity: 0.65;
   -webkit-background-size: cover;
@@ -161,8 +153,8 @@ main {
   opacity: .95;
 }
 
-#four{
-  background: url('../images/crypto.jpg') no-repeat center;
+#four {
+  background: url('../images/unix.jpeg') no-repeat center;
   background-size: cover;
   opacity: 0.65;
   -webkit-background-size: cover;
@@ -213,3 +205,22 @@ main {
 .icons a.github { background: url('../images/social-icons/github.png') left top no-repeat; }
 .icons a.linkedin { background: url('../images/social-icons/linkedin.png') left top no-repeat; }
 .icons a:hover { background-position: left -34px; }
+
+@media screen and (max-width: 900px)
+{
+  main {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(4, 450px);
+    grid-auto-rows: 500px;
+    height: auto;
+    grid-gap: 35px;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-flow: row dense;
+  }
+}
