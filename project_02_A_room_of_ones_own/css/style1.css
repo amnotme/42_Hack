@@ -56,7 +56,7 @@ main {
   grid-auto-rows: 600px;
   height: auto;
   border: 1px solid green;
-  grid-gap: 5px;
+  grid-gap: 35px;
   justify-content: center;
   justify-items: center;
   align-items: stretch;
@@ -72,19 +72,114 @@ main {
 .box {
   width: 450px;
   height: auto;
-  border: 1px solid red;
-  /*border-image: url("../images/border.png") 50 round;
-  -webkit-border-image: url("../images/border.png") 50 round;
-  -o-border-image: url("../images/border.png") 50 round;*/
+  /*border: 1px solid red;*/
 }
 
-.box img {
-  width: 100%;
-  height: auto;
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box li{
+    font-size: 18px;
+    font-weight: 800px;
+    font-family: monospace;
+    flex-direction: row;
+    padding: 15px 50px;
+    width: auto;
+    margin: 5px 0;
+    background-color: rgba(255, 0, 25, 0.8);
+    color: black;
+    overflow: hidden;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+}
+
+.box li:hover {
+  transition: background-color .5s ease-in-out, font-size .5s;
+  -webkit-transition: background-color .5s ease-in-out, font-size .5s;
+  font-size: 22px;
+  background-color: rgba(255, 0, 35, 0.95);
+}
+
+.box a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+#one{
+  background: url('../images/crypto.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.65;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+#one:hover {
+  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  opacity: .95;
+}
+
+#two{
+  background: url('../images/web_design.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.65;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+#two:hover {
+  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  opacity: .95;
+}
+
+#three{
+  background: url('../images/crypto.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.65;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+#three:hover {
+  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  opacity: .95;
+}
+
+#four{
+  background: url('../images/crypto.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.65;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+#four:hover {
+  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  opacity: .95;
 }
 
 .icons ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 15px solid transparent;
