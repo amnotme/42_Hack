@@ -36,8 +36,9 @@ body {
 }
 
 .box {
-  width: 350px;
+  grid-column: 2;
   height: auto;
+  border: 1px solid green;
 }
 
 .box {
@@ -46,14 +47,14 @@ body {
   align-items: center;
 }
 
-.box li{
+.box input, .box textarea {
     font-size: 18px;
     font-weight: 800px;
     font-family: monospace;
     flex-direction: row;
     padding: 15px 50px;
     width: auto;
-    margin: 5px 0;
+    margin: 1px 0;
     background-color: rgba(255, 0, 25, 0.8);
     color: #EAE0C8;
     overflow: hidden;
@@ -64,7 +65,7 @@ body {
   color: #EAE0C8;
 }
 
-.box li:hover {
+.box input:hover , .box textarea:hover{
   transition: background-color .5s ease-in-out, font-size .5s;
   -webkit-transition: background-color .5s ease-in-out, font-size .5s;
   font-size: 22px;
@@ -73,70 +74,6 @@ body {
 
 .box a, a:hover, a:visited, a:active {
   text-decoration: none;
-}
-
-#one{
-  background: url('../images/crypto.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#one:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#two{
-  background: url('../images/web_design.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#two:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#three {
-  background: url('../images/graphics.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#three:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#four {
-  background: url('../images/unix.jpeg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#four:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
 }
 
 .icons ul {
@@ -200,11 +137,10 @@ body {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     display: grid;
-    margin-top: 50px;
+    margin-top: 35px;
     margin-bottom: 50px;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: repeat(2, 450px);
-    grid-auto-rows: 600px;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: repeat(1, 450px);
     height: auto;
     grid-gap: 35px;
     justify-content: center;
@@ -247,14 +183,11 @@ body {
     display: grid;
     margin-top: 35px;
     margin-bottom: 50px;
-    grid-template-columns: 250px;
-    grid-template-rows: repeat(4, 250px);
-    grid-auto-rows: 300px;
+    grid-template-columns: 1fr 80% 1fr ;
+    grid-template-rows: repeat(1, 450px);
     height: auto;
-    grid-gap: 15px;
     justify-content: center;
     align-items: stretch;
     align-content: center;
-    grid-auto-flow: row dense;
   }
 }

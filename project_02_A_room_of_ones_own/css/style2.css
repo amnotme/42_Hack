@@ -36,27 +36,22 @@ body {
 }
 
 .box {
-  width: 350px;
-  height: auto;
-}
-
-.box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box li{
-    font-size: 18px;
-    font-weight: 800px;
-    font-family: monospace;
-    flex-direction: row;
-    padding: 15px 50px;
-    width: auto;
-    margin: 5px 0;
-    background-color: rgba(255, 0, 25, 0.8);
-    color: #EAE0C8;
-    overflow: hidden;
+  font-size: 18px;
+  font-weight: 800px;
+  font-family: monospace;
+  flex-direction: row;
+  padding: 15px 50px;
+  width: auto;
+  margin: 5px 0;
+  background-color: rgba(255, 0, 25, 0.8);
+  color: #EAE0C8;
+  overflow: hidden;
 }
 
 .box a {
@@ -68,75 +63,20 @@ body {
   transition: background-color .5s ease-in-out, font-size .5s;
   -webkit-transition: background-color .5s ease-in-out, font-size .5s;
   font-size: 22px;
-  background-color: rgba(255, 0, 35, 0.95);
+  background-color: rgba(139, 49, 58, 0.95);
 }
 
 .box a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-#one{
-  background: url('../images/crypto.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
+.box1 {
+  background: url('../images/lhernand.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100%;
   overflow: hidden;
-}
-#one:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#two{
-  background: url('../images/web_design.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#two:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#three {
-  background: url('../images/graphics.jpg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#three:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
-}
-
-#four {
-  background: url('../images/unix.jpeg') no-repeat center;
-  background-size: cover;
-  opacity: 0.65;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-#four:hover {
-  transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  opacity: .95;
 }
 
 .icons ul {
@@ -179,6 +119,20 @@ body {
 
 @media screen and (min-width: 901px)
 {
+  .box1 {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    grid-column: 2;
+    height: auto;
+    border-right: 7px solid rgb(139, 49, 58);
+  }
+
+  .box2 {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    grid-column: 3;
+    height: auto;
+  }
   .nav_bar ul {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -196,15 +150,15 @@ body {
     border-right: 1px solid rgba(128,128,0,0.5);
     border-left: 1px solid rgba(128,128,0,0.5);
   }
+
   main {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     display: grid;
     margin-top: 50px;
     margin-bottom: 50px;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: repeat(2, 450px);
-    grid-auto-rows: 600px;
+    grid-template-columns: 5% 5fr 3fr 5%;
+    grid-template-rows: 500px;
     height: auto;
     grid-gap: 35px;
     justify-content: center;
@@ -216,6 +170,21 @@ body {
 
 @media screen and (max-width: 900px)
 {
+
+  .box1 {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    width: 600px;
+    height: auto;
+    border-bottom: 10px solid rgb(139, 49, 58);
+  }
+
+  .box2 {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    width: 600px;
+    height: auto;
+  }
 
   .nav_bar {
     transition: all 1s ease;
@@ -231,6 +200,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .nav_bar li{
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -241,15 +211,15 @@ body {
     border-top: 1px solid rgba(128,128,0,0.5);
     border-bottom: 1px solid rgba(128,128,0,0.5);
   }
+
   main {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     display: grid;
     margin-top: 35px;
     margin-bottom: 50px;
-    grid-template-columns: 250px;
-    grid-template-rows: repeat(4, 250px);
-    grid-auto-rows: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 250px;
     height: auto;
     grid-gap: 15px;
     justify-content: center;
