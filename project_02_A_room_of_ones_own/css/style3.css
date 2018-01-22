@@ -117,8 +117,6 @@ body {
 @media screen and (min-width: 901px)
 {
   .nav_bar ul {
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
     font-size: 48px;
     display: flex;
     flex-direction: row;
@@ -153,16 +151,7 @@ body {
 @media screen and (max-width: 900px)
 {
 
-  .nav_bar {
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    font-family: 'Joti One', cursive;
-    background-color: rgba(0,128,128, 0.5);
-  }
-
   .nav_bar ul{
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
     font-size: 48px;
     display: flex;
     flex-direction: column;

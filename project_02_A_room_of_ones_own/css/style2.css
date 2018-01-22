@@ -174,7 +174,7 @@ body {
   .box1 {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
-    width: 600px;
+    grid-column: 2;
     height: auto;
     border-bottom: 10px solid rgb(139, 49, 58);
   }
@@ -182,15 +182,8 @@ body {
   .box2 {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
-    width: 600px;
+    grid-column: 2;
     height: auto;
-  }
-
-  .nav_bar {
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    font-family: 'Joti One', cursive;
-    background-color: rgba(0,128,128, 0.5);
   }
 
   .nav_bar ul{
@@ -218,7 +211,7 @@ body {
     display: grid;
     margin-top: 35px;
     margin-bottom: 50px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 350px 250px;
     height: auto;
     grid-gap: 15px;
