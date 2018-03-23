@@ -1,4 +1,4 @@
-# Flux 
+# Sorting 
 
 An application architecture for React
 
