@@ -1,5 +1,4 @@
-# Sorting 
-
+# Annie
 An quick intro to sorting algorithms and why they are useful
 
 ---
