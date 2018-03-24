@@ -5,10 +5,18 @@ An quick intro to sorting algorithms and why they are useful
 
 ### Why is sorting important?
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+- In CS:
+- IRL:
 
 ---
 
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+### Bubble sort!
+Here's an implementation on bubble sort. Bubble sort is one of the most
+inefficient sorting algorithms because of how simple it is.
+
+![Press Down Key](assets/down-arrow.png)
+
++++?code=src/bubble_sort_classes.rb&lang=ruby
+
+---
+
