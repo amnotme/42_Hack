@@ -31,3 +31,5 @@ inefficient sorting algorithms because of how simple it is.
 
 ---
 
+### Quick Sort!
+
