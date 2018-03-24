@@ -34,6 +34,11 @@ inefficient sorting algorithms because of how simple it is.
 ---
 
 ### Quick Sort!
+An efficient sorting algorithm. It's a divide and conquer algorithm.  Quicksort first divides a large array into two smaller sub-arrays; the low elements and the high elements. 
+Quicksort can then recursively sort the sub-arrays.
 
+![Press Down Key](assets/down-arrow.png)
 
++++?code=src/quick_sort.rb&lang-ruby
 
+---
