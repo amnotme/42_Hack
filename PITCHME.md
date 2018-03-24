@@ -31,5 +31,9 @@ inefficient sorting algorithms because of how simple it is.
 
 ---
 
+---?image=assets/bubble-sort.gif
+
 ### Quick Sort!
+
+
 
