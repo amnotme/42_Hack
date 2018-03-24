@@ -57,5 +57,34 @@ Quicksort can then **recursively** sort the sub-arrays.
 
 ---
 
+### Merge Sort!
+Merge sort is an efficient, general-purpose, comparison-based algorithm.  Merge sort is a divide and conquer algorithm as well where you:
+1.Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
+2.Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+
+![Press Down Key](assets/down-arrow.png)
+
++++?code=src/merge_sort.rb&lang=ruby
+
+@[1] (Enter into the already built-in array class)
+@[2] (Let's define our method as merge_sort that takes in an optional **proc**. A block of code that can define part of the inner logic of our algorithm)
+@[6] (If no proc is passed we can assign the sorting to be of ascending order with the combined comparison operator aka., the spaceship operator)
+@[8] (We'll setup a base case to return.  This will be the recursive functionality part of the algorithm.  We want the count of the array to contain 1 element or 0 element in order to return).
+@[10] (We want to set up a midpoint where we can disect our array and pass down as reference for our left and right sides)
+@[11-12] (We'll be making lots of recursive calls now.  We'll continue taking elements from the left of the mipoint and placing them in an arrays called sorted_left and viceversa.)
+@[14] (Finally we'll merge both sides.  This will call our merge method. The merge method will act iteratively and not recursively)
+@[19-37] (This is the merge method)
+@[22-31] (We have to constantly loop **until** the left or the right sides are empty)
+@[23-29] (We'll do comparisons and see which element from both sides is smaller and shove that element into our separate array.)
+@[33-36] (When we are done with both sides we still have two elements that have stayed behind.  We will need to add them into the array at the end and finally return the merged array.)
+
+---?image=assets/merge_sort.gif
+
+---?image=assets/simple1.jpg
+
+---?image=assets/simple2.jpg
+
+---?image=assets/simple3.jpg
 
 ---
+

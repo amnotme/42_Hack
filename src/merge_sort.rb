@@ -7,7 +7,7 @@ class Array
 
     return self if count <= 1
 
-    midpoint = count / 2
+    midpoint = count / 2  
     sorted_left = self.take(midpoint).merge_sort(&prc)
     sorted_right = self.drop(midpoint).merge_sort(&prc)
 
@@ -34,4 +34,5 @@ class Array
     merged.concat(right)
 
     merged
-
+  end
+end
