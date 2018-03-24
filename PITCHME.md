@@ -1,5 +1,5 @@
 # Sorting
-An quick intro to sorting algorithms and why they are useful
+A quick intro to sorting algorithms and why they are useful
 
 ---
 
@@ -30,8 +30,6 @@ inefficient sorting algorithms because of how simple it is.
 @[18] (We'll return the sorted array so we can do something with it)
 
 ---?image=assets/bubble-sort.gif
-
----
 
 ### Quick Sort!
 An efficient sorting algorithm. It's a divide and conquer algorithm.  Quicksort first divides a large array into two smaller sub-arrays; the low elements and the high elements. 
