@@ -5,8 +5,7 @@ A quick intro to sorting algorithms and why they are useful
 
 ### Why is sorting important?
 
-- In CS:
-- IRL:
+- Talk it out with your peeps! (2 min).
 
 ---
 
@@ -51,8 +50,6 @@ Quicksort can then **recursively** sort the sub-arrays.
 
 ---?image=assets/quick-sort.gif
 
----
-
 ---?image=assets/bob-qiq.gif
 
 ---
@@ -87,4 +84,5 @@ Merge sort is an efficient, general-purpose, comparison-based algorithm.  Merge 
 ---?image=assets/simple3.jpg
 
 ---
+
 
