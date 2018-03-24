@@ -29,9 +29,9 @@ inefficient sorting algorithms because of how simple it is.
 @[11-13] (We'll do a swap if our left element is greater than the right element and we'll raise a flag so it can let us know that the array is not sorted and we'll start the process once more.)
 @[18] (We'll return the sorted array so we can do something with it)
 
----
-
 ---?image=assets/bubble-sort.gif
+
+---
 
 ### Quick Sort!
 
