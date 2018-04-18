@@ -1,5 +1,5 @@
 # Sorting
-A quick intro to sorting algorithms and why they are useful
+A quick intro to sorting algorithms
 
 ---
 
