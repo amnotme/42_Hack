@@ -1,0 +1,27 @@
+I really enjoyed this project.  I had a blast working though it.  
+The Vignere cipher has been my favorite by far. 
+
+I felt like the content was extremely doable in a single weekend and that
+it was very well thought out.  
+
+The introductory problems are the right way to get the kids excited about 
+cryptography.  I would also like to suggest that we can ask them to send us 
+a message about how they're feeling in 42 that's been encoded so we can decode it
+Perhaps we could take this as an opportunity to get some first-hand feedback 
+on how they are feeling. 
+
+Wingdings was a bit troublesome in getting.  I felt that I would be able to 
+tamper with the unicode itself, add value to the hexadecimal part of the 
+unicode string and then re use it to print it again.  Unfortunately ruby isn't
+that cool for what I could tell and it took me a bit more time to figure this one
+out than the rest.
+
+The Vignere cipher was lots of fun to work around and creating the encrypter 
+portion of it. 
+
+I can suggest for the vignere cipher to create a bonus portion to it and 
+to have the program encrypt or decrypt according to user's input
+
+usage: ruby vignere.rb  [mode (1 for encrypt 2 for decrypt)] [key_string] [string]
+
+All in all, a great project for the kiddos.
